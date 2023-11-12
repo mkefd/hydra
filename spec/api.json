@@ -79,6 +79,7 @@
         "description": "Specify a time duration in milliseconds, seconds, minutes, hours.",
         "pattern": "^([0-9]+(ns|us|ms|s|m|h))*$",
         "title": "Time duration",
+        "nullable": true,
         "type": "string"
       },
       "NullInt": {
@@ -86,11 +87,6 @@
         "type": "integer"
       },
       "NullString": {
-        "nullable": true,
-        "type": "string"
-      },
-      "NullTime": {
-        "format": "date-time",
         "nullable": true,
         "type": "string"
       },
@@ -589,11 +585,6 @@
         },
         "type": "object"
       },
-      "nullDuration": {
-        "nullable": true,
-        "pattern": "^[0-9]+(ns|us|ms|s|m|h)$",
-        "type": "string"
-      },
       "nullInt64": {
         "nullable": true,
         "type": "integer"
@@ -601,6 +592,7 @@
       "nullTime": {
         "format": "date-time",
         "title": "NullTime implements sql.NullTime functionality.",
+        "nullable": true,
         "type": "string"
       },
       "oAuth2Client": {
